@@ -1,0 +1,318 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"4NX4G1UNUzldOnr5KRalRok8pzAZUWDh": {
+			"height": 90,
+			"title": "Common.move_bait",
+			"width": 610,
+			"x": 1545,
+			"y": 57
+		},
+		"9VeRwKo8DopBedRfiiSR2DgbnGxNBxHT": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 616,
+			"y": 127
+		},
+		"A7f5haMA4WVJTPGG7IYgYefKmc4HlAA9": {
+			"height": 90,
+			"title": "roleSplit_biatInFront",
+			"width": 209,
+			"x": 909,
+			"y": -33
+		},
+		"KdpWLb9k44rBLmWUJOrbLQK9yb14M7VK": {
+			"height": 90,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 918,
+			"y": 70
+		},
+		"KmQCn7BoH3L9iEvRj1yWkhsrERqHJgCC": {
+			"height": 94,
+			"title": "store_missionInfo",
+			"width": 198,
+			"x": 534,
+			"y": -177
+		},
+		"Lp05lkWuW68vjVjUUA0zmejfumgMC4Lh": {
+			"height": 60,
+			"title": "sequence_aproachEnemyHill",
+			"width": 266,
+			"x": 614,
+			"y": -2
+		},
+		"MkcYdg15g7lPJQNqnJmZYl1XZKXbEeMW": {
+			"height": 90,
+			"title": "oneTime_hillClear",
+			"width": 197,
+			"x": 403,
+			"y": -16
+		},
+		"QoM2LgH8LdyKn2hILEdjRt2XpL6ZOJUL": {
+			"height": 94,
+			"title": "store_doHillOccupation",
+			"width": 360,
+			"x": 670,
+			"y": 371
+		},
+		"RT1JJQ4scygE6WrtrNWdQysxJUatKADv": {
+			"height": 94,
+			"title": "store_hillSearch",
+			"width": 511,
+			"x": 425,
+			"y": 251
+		},
+		"USYXL4xDd81UR9trz77gQtFGwF0N1VKr": {
+			"height": 90,
+			"title": "Common.move",
+			"width": 610,
+			"x": 924,
+			"y": -133
+		},
+		"XABpcwKRCuSBe9XnxDtwngnZ7JAd7jMH": {
+			"height": 90,
+			"title": "Common.move_attack",
+			"width": 610,
+			"x": 1550,
+			"y": 137
+		},
+		"iTZpGIN5YARrU9Yaok11hpSPKPas56wW": {
+			"height": 90,
+			"title": "Common.move_bainting",
+			"width": 610,
+			"x": 1542,
+			"y": 224
+		},
+		"kOpgKDS8Zv0L6GpLKldWY8Nc2gfd8GiL": {
+			"height": 90,
+			"title": "Common.move_attackUnits",
+			"width": 618,
+			"x": 1546,
+			"y": -44
+		},
+		"u0qfTck6KXjKUr8IXTKCVZlSmg4SRebr": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 225,
+			"y": -10
+		},
+		"yB28x4nNLXWeCuJTI4ZgNyz41MhcwKMp": {
+			"height": 92,
+			"title": "store_invalidatingCondition",
+			"width": 252,
+			"x": 930,
+			"y": 173
+		},
+		"z3O6dmH2txC0m5Qe6QKGt9MPUC1jeX8f": {
+			"height": 70,
+			"title": "roleSplit_onlyAttUnits",
+			"width": 215,
+			"x": 419,
+			"y": 378
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_balt_mySecondProj.peweee", "nota_balt_mySecondProj.warrior" ],
+		"name": "Role 0"
+	}, {
+		"categories": [ "nota_balt_mySecondProj.Bear" ],
+		"name": "Role 1"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "KmQCn7BoH3L9iEvRj1yWkhsrERqHJgCC",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "search_height"
+			}, {
+				"name": "value",
+				"value": "core.MissionInfo()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "USYXL4xDd81UR9trz77gQtFGwF0N1VKr",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "pos",
+						"value": "{x = search_height.enemyPositions[1].x-800, z = search_height.enemyPositions[1].z}"
+					}, {
+						"name": "fight",
+						"value": "false"
+					}, {
+						"name": "scriptName",
+						"value": "Common.move"
+					} ],
+					"scriptName": "Common.move"
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "kOpgKDS8Zv0L6GpLKldWY8Nc2gfd8GiL",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "pos",
+							"value": "{x = search_height.enemyPositions[1].x-720, z = search_height.enemyPositions[1].z}"
+						}, {
+							"name": "fight",
+							"value": "true"
+						}, {
+							"name": "scriptName",
+							"value": "Common.move"
+						} ],
+						"scriptName": "Common.move"
+					}, {
+						"children": [],
+						"id": "4NX4G1UNUzldOnr5KRalRok8pzAZUWDh",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "pos",
+							"value": "{x = search_height.enemyPositions[1].x-630, z = search_height.enemyPositions[1].z}"
+						}, {
+							"name": "fight",
+							"value": "false"
+						}, {
+							"name": "scriptName",
+							"value": "Common.move"
+						} ],
+						"scriptName": "Common.move"
+					} ],
+					"id": "A7f5haMA4WVJTPGG7IYgYefKmc4HlAA9",
+					"nodeType": "roleSplit",
+					"parameters": [ {
+						"name": "mode",
+						"value": "all-success"
+					} ]
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "XABpcwKRCuSBe9XnxDtwngnZ7JAd7jMH",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "pos",
+							"value": "{x = search_height.enemyPositions[1].x-150, z = search_height.enemyPositions[1].z}"
+						}, {
+							"name": "fight",
+							"value": "true"
+						}, {
+							"name": "scriptName",
+							"value": "Common.move"
+						} ],
+						"scriptName": "Common.move"
+					}, {
+						"children": [],
+						"id": "iTZpGIN5YARrU9Yaok11hpSPKPas56wW",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "pos",
+							"value": "{x = search_height.enemyPositions[1].x, z = search_height.enemyPositions[1].z}"
+						}, {
+							"name": "fight",
+							"value": "false"
+						}, {
+							"name": "scriptName",
+							"value": "Common.move"
+						} ],
+						"scriptName": "Common.move"
+					} ],
+					"id": "KdpWLb9k44rBLmWUJOrbLQK9yb14M7VK",
+					"nodeType": "roleSplit",
+					"parameters": [ {
+						"name": "mode",
+						"value": "any-success"
+					} ]
+				}, {
+					"children": [],
+					"id": "yB28x4nNLXWeCuJTI4ZgNyz41MhcwKMp",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "test_cond"
+					}, {
+						"name": "value",
+						"value": "1"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				} ],
+				"id": "Lp05lkWuW68vjVjUUA0zmejfumgMC4Lh",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [],
+				"id": "9VeRwKo8DopBedRfiiSR2DgbnGxNBxHT",
+				"nodeType": "success",
+				"parameters": []
+			} ],
+			"id": "MkcYdg15g7lPJQNqnJmZYl1XZKXbEeMW",
+			"nodeType": "luaCondition",
+			"parameters": [ {
+				"name": "expression",
+				"value": "test_cond == nil"
+			}, {
+				"name": "repeat",
+				"value": "true"
+			} ]
+		}, {
+			"children": [],
+			"id": "RT1JJQ4scygE6WrtrNWdQysxJUatKADv",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "x"
+			}, {
+				"name": "value",
+				"value": "nota_balt_mySecondProj.HillCheckerTB(search_height.areaHeight)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "QoM2LgH8LdyKn2hILEdjRt2XpL6ZOJUL",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "rt"
+				}, {
+					"name": "value",
+					"value": "nota_balt_mySecondProj.MoveToHillsTB(x)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			} ],
+			"id": "z3O6dmH2txC0m5Qe6QKGt9MPUC1jeX8f",
+			"nodeType": "roleSplit",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		} ],
+		"id": "u0qfTck6KXjKUr8IXTKCVZlSmg4SRebr",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

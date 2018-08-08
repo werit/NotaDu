@@ -1,0 +1,99 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"8GamaTdJ8iLQpJSivyuHQheocv2FQufE": {
+			"height": 90,
+			"title": "Common.relativeMove",
+			"width": 526,
+			"x": 846,
+			"y": 3
+		},
+		"hydEVq5Q8o9bYYqHDZsNWmXPexNRCJ5M": {
+			"height": 94,
+			"title": "store",
+			"width": 249,
+			"x": 846,
+			"y": 102
+		},
+		"k53nbFeSnD56rnOKruDQk0Kt2MCiKhBU": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 467,
+			"y": 15
+		},
+		"nKGg9uoPNrUvAI1igkYQ9UGvhOr0kPMc": {
+			"height": 94,
+			"title": "store",
+			"width": 159,
+			"x": 817,
+			"y": -81
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_balt_mySecondProj.comanderCat" ],
+		"name": "Role 0"
+	}, {
+		"categories": [ "nota_balt_mySecondProj.peweee" ],
+		"name": "Role 1"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "nKGg9uoPNrUvAI1igkYQ9UGvhOr0kPMc",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "windData"
+			}, {
+				"name": "value",
+				"value": "map.Wind()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "8GamaTdJ8iLQpJSivyuHQheocv2FQufE",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "dist",
+				"value": "{x =windData.dirX*5, z = windData.dirZ*5}"
+			}, {
+				"name": "fight",
+				"value": "false"
+			}, {
+				"name": "scriptName",
+				"value": "Common.relativeMove"
+			} ],
+			"scriptName": "Common.relativeMove"
+		}, {
+			"children": [],
+			"id": "hydEVq5Q8o9bYYqHDZsNWmXPexNRCJ5M",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "varForDebug"
+			}, {
+				"name": "value",
+				"value": "example.ExampleDebug()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		} ],
+		"id": "k53nbFeSnD56rnOKruDQk0Kt2MCiKhBU",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

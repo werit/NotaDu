@@ -1,0 +1,4 @@
+-- potrebujem ukoncit mission, hned ako dosiahnem dost bodov
+-- mohol by som spravit check na nepriatela a podla toho tam posielat vojakov
+-- upravit hill checker, pretoze nenajde vsetky kopce
+-- taktiez by som mohol zprehladnit kopce. momentalne mam prvu a druhu polozku v poli ako x a y, to nie je moc citatelne
